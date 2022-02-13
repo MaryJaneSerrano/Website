@@ -1,453 +1,486 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@Vongolaa 
-TheBoringDude
-/
-uc-bcf_concept
-Public
-Code
-Issues
-Pull requests
-Actions
-Projects
-Wiki
-Security
-Insights
-uc-bcf_concept/index.html
-@renovate-bot
-renovate-bot Update dependency simplelightbox to v2.7.2
-Latest commit 4fdacdd on Apr 28, 2021
- History
- 2 contributors
-@joshabance@renovate-bot
-411 lines (395 sloc)  33.3 KB
-   
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>University of the Cordilleras - Welcome [Concept Design]</title>
-    <!-- favicon -->
-    <link rel="shortcut icon" href="./favicon.ico">
-    <!-- main css file -->
-    <link rel="stylesheet" href="./css/build.css">
-    <!-- google font -->
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Source+Sans+Pro:wght@300;400;700&display=swap" rel="stylesheet">
-    <!-- fontawesome 5 -->
-    <script defer src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
-    <!-- alpine js -->
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-    <!-- simple light box [src: cdnjs <unofficial> -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.7.2/simple-lightbox.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.7.2/simple-lightbox.min.js"></script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>University of the Cordilleras</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Medilab - v4.7.1
+  * Template URL: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
 
-<body class="antialiased">
-    <header id="header">
-        <div class="h-auto bg-main flex flex-col lg:flex-row justify-between items-center">
-            <div class="">
-                <img src="./uclogo.png" alt="">
-            </div>
-            <div class="w-full lg:w-auto bg-black text-white group relative xl:mr-8">
-                <a href="#" class="text-sm lg:text-base flex px-5 xl:px-8 py-2 items-center hover:bg-green-400"><i class="fas fa-user-circle mr-2"></i> UC Online Services</a>
-                <ul class="group-hover:block hidden absolute bg-green-200 z-50">
-                    <li class="border-b border-white py-3 px-8 text-sm font-light hover:bg-green-100"><a href="#"><i class="fas fa-address-book mr-2"></i> Student Records</a></li>
-                    <li class="border-b border-white py-3 px-8 text-sm font-light hover:bg-green-100"><a href="#"><i class="fas fa-file-signature mr-2"></i> M.O.R.A.L.E</a></li>
-                    <li class="py-3 px-8 text-sm font-light hover:bg-green-100"><a href="#"><i class="fas fa-envelope mr-2"></i> eMail Login</a></li>
+<body>
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-between">
+    
+      <div class="d-none d-lg-flex social-links align-items-center">
+         <a href="#" class="twitter"><i class="bi bi-twitter"></i>@UCJaguars</a>
+        <a href="https://www.facebook.com/UCjaguars" class="facebook"> <i class="bi bi-facebook"></i> @UCjaguars</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"  width="155" 
+     height="300"></a>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+       <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto" href="#about">About UC</a></li>
+          <li><a class="nav-link scrollto active" href="#hero">Community</a></li>
+
+           <li class="dropdown"><a href="#"><span>Alumni</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="https://uc-bcf.edu.ph/stalwarts">UC Stalwart</a></li>
+              <li><a href="https://uc-bcf.edu.ph/tatak-uc">Tatak UC</a></li>
+              <li><a href="https://uc-bcf.edu.ph/tatak-jaguar">Tatak Jaguar</a></li>
+              <li><a href="https://uc-bcf.edu.ph/alumni-affairs-office">Affairs Office</a></li>
+            </ul>
+          </li>
+          
+
+          <li class="dropdown"><a href="#"><span>Academics</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+             
+              <li><a href="https://uc-bcf.edu.ph/college/of/criminal-justice-education">Criminal Justice Education</a></li>
+              <li><a href="https://uc-bcf.edu.ph/college/of/teacher-education">Teacher Education</a></li>
+              <li><a href="https://uc-bcf.edu.ph/college/of/arts-and-sciences">Arts & Sciences</a></li>
+              <li><a href="https://uc-bcf.edu.ph/college/of/engineering-and-architecture">Engineering & Architecture</a></li>
+              <li><a href="https://uc-bcf.edu.ph/college/of/nursing">Nursing</a></li>
+              <li><a href="https://uc-bcf.edu.ph/college/of/information-technology-and-computer-science">IT & Computer Science</a></li>
+              <li><a href="https://uc-bcf.edu.ph/college/of/accountancy">Accountancy</a></li>
+              <li><a href="https://uc-bcf.edu.ph/college/of/business-administration">Business Administration</a></li>
+              <li><a href="https://uc-bcf.edu.ph/college/of/hospitality-and-tourism-management">Hospitality & Tourism Management</a></li>
+              <li><a href="https://uc-bcf.edu.ph/college/of/law">Law</a></li>
+               <li><a href="https://uc-bcf.edu.ph/eteeap">ETEEAP</a></li>
+
+              <li class="dropdown"><a href="#"><span>Integrated School</span> <i class=" bi-chevron-right"></i></a>
+
+                <ul>
+                  <li><a href="https://uc-bcf.edu.ph/integrated-school/gs-jhs">Grade School & Junior High School</a></li>
+                  <li><a href="https://uc-bcf.edu.ph/integrated-school/shs">Senior High School</a></li>
                 </ul>
-            </div>
-        </div>
 
-        <nav class="px-10 py-3 lg:py-0 lg:flex lg:w-full mx-auto justify-center items-center bg-green-300 text-white" x-data='{ open:false }'>
-            <div class="flex justify-between text-xl font-bold lg:hidden" @click="open=!open">
-                <div>
-                    <h1 class="tracking-wide">Menu</h1>
-                </div>
-                <div>
-                    <button class="focus:outline-none"
-                        @keydown.escape="open = false"
-                        >
-                        <i x-show="!open" class="fas fa-bars"></i>
-                        <i x-show="open" class="fas fa-times"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="ml-4 mt-2 lg:flex lg:ml-0 lg:mt-0 text-center"
-                    :class="{'block':open, 'hidden':!open}"
-                    x-show="true"
-                    @click.away = "open=false">
-                <ul class="block flex-col lg:flex-row lg:flex items-center justify-between">
-                    <li class="block py-2 lg:py-0 lg:inline-flex"><a href="#" class="lg:py-3 px-2 lg:px-3 xl:px-5 hover:bg-orange font-light tracking-wide">Home</a></li>
-                    <li class="block py-2 lg:py-0 lg:inline-flex"><a href="#" class="lg:py-3 px-2 lg:px-3 xl:px-5 hover:bg-orange font-light tracking-wide">Administration</a></li>
-                    <li class="block py-2 lg:py-0 lg:inline-flex"><a href="#" class="lg:py-3 px-2 lg:px-3 xl:px-5 hover:bg-orange font-light tracking-wide">Academics</a></li>
-                    <li class="block py-2 lg:py-0 lg:inline-flex"><a href="#" class="lg:py-3 px-2 lg:px-3 xl:px-5 hover:bg-orange font-light tracking-wide">Students</a></li>
-                    <li class="block py-2 lg:py-0 lg:inline-flex"><a href="#" class="lg:py-3 px-2 lg:px-3 xl:px-5 hover:bg-orange font-light tracking-wide">Research & Innovation</a></li>
-                    <li class="block py-2 lg:py-0 lg:inline-flex"><a href="#" class="lg:py-3 px-2 lg:px-3 xl:px-5 hover:bg-orange font-light tracking-wide">Libraries</a></li>
-                    <li class="block py-2 lg:py-0 lg:inline-flex"><a href="#" class="lg:py-3 px-2 lg:px-3 xl:px-5 hover:bg-orange font-light tracking-wide">Community Extension</a></li>
-                    <li class="block py-2 lg:py-0 lg:inline-flex"><a href="#" class="lg:py-3 px-2 lg:px-3 xl:px-5 hover:bg-orange font-light tracking-wide">Extra-Curricular</a></li>
-                    <li class="block py-2 lg:py-0 lg:inline-flex"><a href="#" class="lg:py-3 px-2 lg:px-3 xl:px-5 hover:bg-orange font-light tracking-wide">Alumni</a></li>
-                    <li class="block py-2 lg:py-0 lg:inline-flex"><a href="#" class="lg:py-3 px-2 lg:px-3 xl:px-5 hover:bg-orange font-light tracking-wide">Special</a></li>
+              </li>
+            </ul>
+          </li>
+
+         
+            <li class="dropdown"><a href="#"><span>International</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="https://uc-bcf.edu.ph/admission-enrollment/international">Application Procedure</a></li>
+              </li>
+              <li><a href="https://uc-bcf.edu.ph/iilic">IILIC</a></li>
+              <li><a href="https://uc-bcf.edu.ph/international/faq">FAQ</a></li>
+
+            </ul>
+          </li>
+
+          <li class="dropdown"><a href="#"><span>Research</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="https://uc-bcf.edu.ph/university-research-trust">UC Research Agenda</a></li>
+              <li><a href="https://uc-bcf.edu.ph/research/nstw2021">2021 NST Week</a></li>
+              <li><a href="https://uc-bcf.edu.ph/research/rso">Research Services Office</a></li>
+              <li><a href="https://uc-bcf.edu.ph/research/into">Innovation and Technology Transfer Office</a></li>
+              <li><a href="https://uc-bcf.edu.ph/research/tbi">UCIANS-TBI</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown"><a href="#"><span>Admissions</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown"><a href="#"><span>Primary and Junior High</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a class="nav-link " href="https://uc-bcf.edu.ph/admission-enrollment/gs-jhs">Requirements</a></li>
+                  <li><a class="nav-link " href="https://uc-bcf.edu.ph/admission-enrollment/gs-jhs#procedures">Enrollment Procedures</a></li>
+                  <li><a class="nav-link " href="https://docs.google.com/forms/d/e/1FAIpQLSebBteCMpzmJnfUV9OYdH9XLpDjnfdPFZubv8CqtqYg0hsJOQ/viewform">Apply Now!</a></li>
                 </ul>
-            </div>
-        </nav>
-    </header>
+              </li>
 
-    <div class="bg-green-500 pt-2 pb-8">
-        <div class="h-auto w-full lg:w-11/12 flex-grow mx-auto md:flex flex-wrap flex-row justify-between md:h-27 lg:h-35 xl:h-45">
-            <!-- slideshow -->
-            <div class="w-full h-full md:w-2/4 xl:w-3/5 bg-green-200">
-                <div class="w-full">
-                    <img src="./images/slideshow/1.jpg" alt="" class="w-full">
-                    <div class="w-full px-4 py-3 md:h-64 lg:h-auto">
-                        <div class="">
-                            <h3 class="font-bold text-xl lg:text-2xl text-yellow font-serif">Be a UC Jaguar, be a Proud UCian!</h3>
-                            <p class="text-lg text-white px-3 py-1 font-light">Reservation for Incoming Grade 11 and College Freshmen for SY 2020-2021 is Now Ongoing</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- promotion news -->
-            <div class="w-full h-full md:w-2/4 xl:w-2/5 flex flex-wrap flex-row z-40">
-                <a href="#" class="relative hover:opacity-75 h-64 flex-shrink flex-grow md:h-1/2 w-1/2">
-                    <img src="./images/promotion/news-1.jpg" alt="" class="w-full object-top h-full object-cover">
-                    <h4 class="absolute right-0 text-sm p-2 font-bold italic lg:text-lg break-normal bg-t-black text-white font-serif bottom-0">UC deploys region-wide real time COVID-19 surveillance system</h4>
-                </a>
-                <a href="#" class="relative hover:opacity-75 h-64 flex-shrink flex-grow md:h-1/2 w-1/2">
-                    <img src="./images/promotion/news-2.jpg" alt="" class="w-full object-top h-full object-cover">
-                    <h4 class="absolute right-0 text-sm p-2 font-bold italic lg:text-lg break-normal bg-t-black text-white font-serif bottom-0">UC students win P3OOk funding from wildlife hackathon competition</h4>
-                </a>
-                <a href="#" class="relative hover:opacity-75 h-64 flex-shrink flex-grow md:h-1/2 w-1/2">
-                    <img src="./images/promotion/news-4.jpg" alt="" class="w-full object-top h-full object-cover">
-                    <h4 class="absolute right-0 text-sm p-2 font-bold italic lg:text-lg break-normal bg-t-black text-white font-serif bottom-0">UC is CHEd-DHEI for K to 12 Graduate Education Scholarships for faculty and staff</h4>
-                </a>
-                <a href="#" class="relative hover:opacity-75 h-64 flex-shrink flex-grow md:h-1/2 w-1/2">
-                    <img src="./images/promotion/news-3.jpg" alt="" class="w-full object-top h-full object-cover">
-                    <h4 class="absolute right-0 text-sm p-2 font-bold italic lg:text-lg break-normal bg-t-black text-white font-serif bottom-0">UC Quality Policy</h4>
-                </a>
-            </div>
-        </div>
-    </div>
+               <li class="dropdown"><a href="#"><span>Undergraduate Programs</span> <i class="bi bi-chevron-right"></i></a>
+                 <ul>
+                  <li><a class="nav-link " href="https://uc-bcf.edu.ph/admission-enrollment/ugp">Requirements</a></li>
+                  <li><a class="nav-link " href="https://uc-bcf.edu.ph/admission-enrollment/ugp#procedures">Enrollment Procedures</a></li>
+                  <li><a class="nav-link " href="https://docs.google.com/forms/d/e/1FAIpQLSeDIqxECdH5M2cfvpiuCLo89Z-_hibqwdbq55UrPP2_x0Tgbg/viewform">Apply Now!</a></li>
+                </ul>
+              </li>
 
-    <!-- floating: back to top -->
-    <div class="z-50 fixed right-1 bottom-1">
-        <a href="#header" title="Back to Top" type="button" class="bg-brown text-white py-4 px-6 rounded-full fixed hover:bg-green-100"><i class="fas fa-angle-double-up"></i></a>
-    </div>
+               <li class="dropdown"><a href="#"><span>Graduate Programs</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://uc-bcf.edu.ph/admission-enrollment/gp">Requirements</a></li>
+                  <li><a href="https://uc-bcf.edu.ph/admission-enrollment/gp#procedures">Enrollment Procedures</a></li>
+                  <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeDIqxECdH5M2cfvpiuCLo89Z-_hibqwdbq55UrPP2_x0Tgbg/closedform">Apply Now!</a></li>
+                </ul>
+              </li> 
+            
+           
+              <li class="dropdown"><a href="#"><span>Juris Doctor</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://uc-bcf.edu.ph/admission-enrollment/jd">Requirements</a></li>
+                  <li><a href="https://uc-bcf.edu.ph/admission-enrollment/jd#procedures">Enrollment Procedures</a></li>
+                  <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeDIqxECdH5M2cfvpiuCLo89Z-_hibqwdbq55UrPP2_x0Tgbg/closedform">Apply Now!</a></li>
+                </ul>
+              </li> 
+            
+              
+              <li class="dropdown"><a href="#"><span>International Students</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="https://uc-bcf.edu.ph/admission-enrollment/international">Requirements</a></li>
+                  <li><a href="https://uc-bcf.edu.ph/admission-enrollment/international#procedures">Enrollment Procedures</a></li>
+                  <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeDIqxECdH5M2cfvpiuCLo89Z-_hibqwdbq55UrPP2_x0Tgbg/closedform">Apply Now!</a></li>
+                </ul>
+              </li> 
 
-    <!-- why uc? -->
-    <div class="flex flex-col flex-wrap text-center pt-10 pb-5">
-        <h1 class="text-3xl font-serif font-bold">Why <span class="underline">University of the Cordilleras</span>?</h1>
-        <div class="w-5/6 sm:w-2/3 lg:w-4/5 py-4 mx-auto flex flex-wrap flex-row justify-center items-start">
-            <div class="w-1/2 md:w-1/3 lg:w-1/5 py-3">
-                <i class="text-5xl text-main fas fa-universal-access"></i>
-                <h4 class="px-4 text-xl m-1">Autonomous & Accredited</h4>
-            </div>
-            <div class="w-1/2 md:w-1/3 lg:w-1/5 py-3">
-                <i class="text-5xl text-main fas fa-globe"></i>
-                <h4 class="px-4 text-xl m-1">Global Linkages</h4>
-            </div>
-            <div class="w-1/2 md:w-1/3 lg:w-1/5 py-3">
-                <i class="text-5xl text-main fas fa-assistive-listening-systems"></i>
-                <h4 class="px-4 text-xl m-1">State-of-the-Art Facilities</h4>
-            </div>
-            <div class="w-1/2 md:w-1/3 lg:w-1/5 py-3">
-                <i class="text-5xl text-main fas fa-user-graduate"></i>
-                <h4 class="px-4 text-xl m-1">Legion of Bar & Board Topnotchers</h4>
-            </div>
-            <div class="w-1/2 md:w-1/3 lg:w-1/5 py-3">
-                <i class="text-5xl text-main fas fa-university"></i>
-                <h4 class="px-4 text-xl m-1">Trimester Program</h4>
-            </div>
-        </div>
-    </div>
+              <li><a href="https://uc-bcf.edu.ph/admission-enrollment/scholarship">Scholarship</a></li>
 
-    <!-- academic programs -->
-    <div class="flex flex-col flex-wrap">
-        <h2 class="text-center text-2xl font-serif font-bold">Academic Programs</h2>
-        <div class="flex flex-row flex-wrap py-4 w-11/12 mx-auto items-center justify-center">
-            <a href="#aca-1" class="w-1/2 md:w-1/3 lg:w-1/4 h-48 md:h-56 lg:h-64 relative group" id="aca-1">
-                <img src="./images/programs/1.jpg" alt="" class="w-full h-full object-cover object-center">
-                <h4 class="p-2 bg-green-200 sm:text-lg ml-3 mb-2 text-white font-bold tracking-wide absolute bottom-0 left-0 w-5/6">Accountancy</h4>
-                <div class="absolute inset-0 bg-t-black opacity-100 hidden group-hover:flex flex-col cursor-pointer">
-                    <ul class="flex flex-col p-5 text-white tracking-wide text-sm md:text-base lg:text-lg font-bold">
-                        <h5 class="font-serif font-bold">Courses</h5>
-                        <li class="truncate ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> Accountancy</li>
-                        <li class="truncate ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> Management Accounting</li>
-                        <li class="truncate ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> Accounting Information System</li>
-                        <li class="truncate ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> Forensic Accounting</li>
-                    </ul>
-                </div>
-            </a>
-            <a href="#aca-2" class="w-1/2 md:w-1/3 lg:w-1/4 h-48 md:h-56 lg:h-64 relative group" id="aca-2">
-                <img src="./images/programs/2.jpg" alt="" class="w-full h-full object-cover object-center">
-                <h4 class="p-2 bg-green-200 sm:text-lg ml-3 mb-2 text-white font-bold tracking-wide absolute bottom-0 left-0 w-5/6">Arts & Science</h4>
-                <div class="absolute inset-0 bg-t-black opacity-100 hidden group-hover:flex flex-col cursor-pointer">
-                    <ul class="flex flex-col p-5 text-white tracking-wide text-sm md:text-base lg:text-lg font-bold">
-                        <h5 class="font-serif font-bold">Courses</h5>
-                        <li class="truncate ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> Political Science</li>
-                        <li class="truncate ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> Communication</li>
-                        <li class="truncate ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> Psychology</li>
-                        <li class="truncate ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> Behavioral Science</li>
-                        <li class="truncate ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> English Language Studies</li>
-                    </ul>
-                </div>
-            </a>
-            <a href="#aca-3" class="w-1/2 md:w-1/3 lg:w-1/4 h-48 md:h-56 lg:h-64 relative group" id="aca-3">
-                <img src="./images/programs/3.jpg" alt="" class="w-full h-full object-cover object-center">
-                <h4 class="p-2 bg-green-200 sm:text-lg ml-3 mb-2 text-white font-bold tracking-wide absolute bottom-0 left-0 w-5/6">Business Administration</h4>
-                <div class="absolute inset-0 bg-t-black opacity-100 hidden group-hover:flex flex-col cursor-pointer">
-                    <ul class="flex flex-col p-5 text-white tracking-wide text-sm md:text-base lg:text-lg font-bold">
-                        <h5 class="font-serif font-bold">Courses</h5>
-                        <li class="truncate ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> Business Administration</li>
-                        <li class="truncate ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> Entrepreneurship</li>
-                        <li class="truncate ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> Office Management</li>
-                        <li class="truncate ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> Real Estate Management</li>
-                        <li class="truncate ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> Digital Marketing</li>
-                    </ul>
-                </div>
-            </a>
-            <a href="#aca-4" class="w-1/2 md:w-1/3 lg:w-1/4 h-48 md:h-56 lg:h-64 relative group" id="aca-4">
-                <img src="./images/programs/4.jpg" alt="" class="w-full h-full object-cover object-center">
-                <h4 class="p-2 bg-green-200 sm:text-lg ml-3 mb-2 text-white font-bold tracking-wide absolute bottom-0 left-0 w-5/6">Criminal Justice Education</h4>
-                <div class="absolute inset-0 bg-t-black opacity-100 hidden group-hover:flex flex-col cursor-pointer">
-                    <ul class="flex flex-col p-5 text-white tracking-wide text-sm md:text-base lg:text-lg font-bold">
-                        <h5 class="font-serif font-bold">Courses</h5>
-                        <li class="ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> Criminology</li>
-                        <li class="ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> Forensic Science</li>
-                    </ul>
-                </div>
-            </a>
-            <a href="#aca-5" class="w-1/2 md:w-1/3 lg:w-1/4 h-48 md:h-56 lg:h-64 relative group" id="aca-5">
-                <img src="./images/programs/5.jpg" alt="" class="w-full h-full object-cover object-center">
-                <h4 class="p-2 bg-green-200 sm:text-lg ml-3 mb-2 text-white font-bold tracking-wide absolute bottom-0 left-0 w-5/6">Engineering & Architecture</h4>
-                <div class="absolute inset-0 bg-t-black opacity-100 hidden group-hover:flex flex-col cursor-pointer">
-                    <ul class="flex flex-col p-5 text-white tracking-wide text-sm md:text-base lg:text-lg font-bold">
-                        <h5 class="font-serif font-bold">Courses</h5>
-                        <li class="truncate ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> Architecture</li>
-                        <li class="truncate ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> Civil Engineering</li>
-                        <li class="truncate ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> Computer Engineering</li>
-                        <li class="truncate ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> Electronics Engineering</li>
-                        <li class="truncate ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> Environment & Sanitary Engineering</li>
-                    </ul>
-                </div>
-            </a>
-            <a href="#aca-6" class="w-1/2 md:w-1/3 lg:w-1/4 h-48 md:h-56 lg:h-64 relative group" id="aca-6">
-                <img src="./images/programs/6.jpg" alt="" class="w-full h-full object-cover object-center">
-                <h4 class="p-2 bg-green-200 sm:text-lg ml-3 mb-2 text-white font-bold tracking-wide absolute bottom-0 left-0 w-5/6">Hospitality & Tourism Management</h4>
-                <div class="absolute inset-0 bg-t-black opacity-100 hidden group-hover:flex flex-col cursor-pointer">
-                    <ul class="flex flex-col p-5 text-white tracking-wide text-sm md:text-base lg:text-lg font-bold">
-                        <h5 class="font-serif font-bold">Courses</h5>
-                        <li class="ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> Hospitality Management</li>
-                        <li class="ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> Tourism Management</li>
-                    </ul>
-                </div>
-            </a>
-            <a href="#aca-7" class="w-1/2 md:w-1/3 lg:w-1/4 h-48 md:h-56 lg:h-64 relative group" id="aca-7">
-                <img src="./images/programs/7.jpg" alt="" class="w-full h-full object-cover object-center">
-                <h4 class="p-2 bg-green-200 sm:text-lg ml-3 mb-2 text-white font-bold tracking-wide absolute bottom-0 left-0 w-5/6">Information Technology & Computer Science</h4>
-                <div class="absolute inset-0 bg-t-black opacity-100 hidden group-hover:flex flex-col cursor-pointer">
-                    <ul class="flex flex-col p-5 text-white tracking-wide text-sm md:text-base lg:text-lg font-bold">
-                        <h5 class="font-serif font-bold">Courses</h5>
-                        <li class="truncate ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> Computer Science</li>
-                        <li class="truncate ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> Information Technology</li>
-                        <li class="truncate ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> Data Analytics</li>
-                        <li class="truncate ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> Computer Technology</li>
-                    </ul>
-                </div>
-            </a>
-            <a href="#aca-8" class="w-1/2 md:w-1/3 lg:w-1/4 h-48 md:h-56 lg:h-64 relative group" id="aca-8">
-                <img src="./images/programs/8.jpg" alt="" class="w-full h-full object-cover object-center">
-                <h4 class="p-2 bg-green-200 sm:text-lg ml-3 mb-2 text-white font-bold tracking-wide absolute bottom-0 left-0 w-5/6">Teacher Education</h4>
-                <div class="absolute inset-0 bg-t-black opacity-100 hidden group-hover:flex flex-col cursor-pointer">
-                    <ul class="flex flex-col p-5 text-white tracking-wide text-sm md:text-base lg:text-lg font-bold">
-                        <h5 class="font-serif font-bold">Courses</h5>
-                        <li class="ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> Elementary Education</li>
-                        <li class="ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> Secondary Education</li>
-                        <li class="ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> Physical Education</li>
-                    </ul>
-                </div>
-            </a>
-            <a href="#aca-9" class="w-1/2 md:w-1/3 lg:w-1/4 h-48 md:h-56 lg:h-64 relative group" id="aca-9">
-                <img src="./images/programs/9.jpg" alt="" class="w-full h-full object-cover object-center">
-                <h4 class="p-2 bg-green-200 sm:text-lg ml-3 mb-2 text-white font-bold tracking-wide absolute bottom-0 left-0 w-5/6">Nursing</h4>
-                <div class="absolute inset-0 bg-t-black opacity-100 hidden group-hover:flex flex-col cursor-pointer">
-                    <ul class="flex flex-col p-5 text-white tracking-wide text-sm md:text-base lg:text-lg font-bold">
-                        <h5 class="font-serif font-bold">Courses</h5>
-                        <li class="ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> Nursing</li>
-                    </ul>
-                </div>
-            </a>
-            <a href="#aca-10" class="w-1/2 md:w-1/3 lg:w-1/4 h-48 md:h-56 lg:h-64 relative group" id="aca-10">
-                <img src="./images/programs/10.jpg" alt="" class="w-full h-full object-cover object-center">
-                <h4 class="p-2 bg-green-200 sm:text-lg ml-3 mb-2 text-white font-bold tracking-wide absolute bottom-0 left-0 w-5/6">Law</h4>
-                <div class="absolute inset-0 bg-t-black opacity-100 hidden group-hover:flex flex-col cursor-pointer">
-                    <ul class="flex flex-col p-5 text-white tracking-wide text-sm md:text-base lg:text-lg font-bold">
-                        <h5 class="font-serif font-bold">Courses</h5>
-                        <li class="ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> Juris Doctor</li>
-                    </ul>
-                </div>
-            </a>
-            <a href="#aca-11" class="w-1/2 md:w-1/3 lg:w-1/4 h-48 md:h-56 lg:h-64 relative group" id="aca-11">
-                <img src="./images/programs/11.jpg" alt="" class="w-full h-full object-cover object-center">
-                <h4 class="p-2 bg-green-200 sm:text-lg ml-3 mb-2 text-white font-bold tracking-wide absolute bottom-0 left-0 w-5/6">Senior High School</h4>
-                <div class="absolute inset-0 bg-t-black opacity-100 hidden group-hover:flex flex-col cursor-pointer">
-                    <ul class="flex flex-col p-5 text-white tracking-wide text-sm md:text-base lg:text-lg font-bold">
-                        <h5 class="font-serif font-bold">Courses</h5>
-                        <li class="truncate ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> ABM</li>
-                        <li class="truncate ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> STEM</li>
-                        <li class="truncate ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> HUMMS</li>
-                        <li class="truncate ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> GAS</li>
-                        <li class="truncate ml-2"><i class="fas fa-dot-circle mr-2 text-sm"></i> TVL</li>
-                    </ul>
-                </div>
-            </a>
-        </div>
-    </div>
+            </ul>
 
-    <hr class="border-b border-green-200 mt-8 mb-4 w-11/12 mx-auto">
+          </li>
 
-    <div class="w-11/12 mx-auto flex flex-col flex-wrap md:flex-row justify-center items-start lg:py-4">
-        <!-- news -->
-        <div class="w-full md:w-2/3" id="news">
-            <h2 class="text-orange text-center md:text-left text-2xl font-serif font-bold">Latest News</h2>
-            <div class="w-full mx-auto flex flex-col flex-wrap lg:flex-row justify-center items-start">
-                <div class="w-full border-l lg:w-1/2 p-4 m-2 m-auto shadow-md lg:shadow-none" id="news-1">
-                    <a href="#news-1" class="text-lg hover:underline font-serif italic text-green-100">University of the Cordilleras’ study on antimicrobial properties of local plants gets funding from DOH</a>
-                    <p class="text-sm py-2 text-brown">May 17, 2020</p>
-                    <p class="line-clamp-1 md:line-clamp-2 xl:line-clamp-3 overflow-hidden">A study by faculty members from the University of the Cordilleras (UC) – College of Nursing in Baguio City has been selected to be a recipient of a research grant from the Department of Health - Cordillera through the Cordillera Regional Health Research and Development Consortium (CRHRDC).</p>
-                    <a href="#news-1" type="button" class="text-sm bg-green-200 hover:bg-green-100 mt-2 py-1 px-3 text-white">Read More</a>
-                </div>
-                <div class="w-full border-l lg:w-1/2 p-4 m-2 m-auto shadow-md lg:shadow-none" id="news-2">
-                    <a href="#news-2" class="text-lg hover:underline font-serif italic text-green-100">University of the Cordilleras among NCCA 2020 Competitive Grants Awardees</a>
-                    <p class="text-sm py-2 text-brown">May 11, 2020</p>
-                    <p class="line-clamp-1 lg:line-clamp-2 xl:line-clamp-3 overflow-hidden">A project from the University of the Cordilleras (UC) in Baguio City has been selected by the National Commission for Culture and the Arts (NCCA) as a recipient of the NCCA 2020 Competitive Grants Program under the Monuments and Sites Category.</p>
-                    <a href="#news-2" type="button" class="text-sm bg-green-200 hover:bg-green-100 mt-2 py-1 px-3 text-white">Read More</a>
-                </div>
-                <div class="w-full border-l lg:w-1/2 p-4 m-2 m-auto shadow-md lg:shadow-none" id="news-3">
-                    <a href="#news-3" class="text-lg hover:underline font-serif italic text-green-100">The Roster of the New Members of the Philippine Bar</a>
-                    <p class="text-sm py-2 text-brown">May 02, 2020</p>
-                    <p class="line-clamp-1 md:line-clamp-2 xl:line-clamp-3 overflow-hidden">Congratulations to our 56 New UC Lawyers! The UC College of Law posted an Overall Passing Rate of 47.86% in the 2019 Bar Examinations! Hold high the torch!</p>
-                    <a href="#news-3" type="button" class="text-sm bg-green-200 hover:bg-green-100 mt-2 py-1 px-3 text-white">Read More</a>
-                </div>
-                <div class="w-full border-l lg:w-1/2 p-4 m-2 m-auto shadow-md lg:shadow-none" id="news-4">
-                    <a href="#news-4" class="text-lg hover:underline font-serif italic text-green-100">University of the Cordilleras deploys region-wide real time COVID-19 surveillance system</a>
-                    <p class="text-sm py-2 text-brown">April 26, 2020</p>
-                    <p class="line-clamp-1 lg:line-clamp-2 xl:line-clamp-3 overflow-hidden">The University of the Cordilleras – Research and Innovation Office (UC-RIO) in Baguio City has deployed a system powered by Geographic Information System that enables real time reporting, inter-agency data sharing, and geographic visualization of COVID-19 cases in the Cordillera Administrative Region.</p>
-                    <a href="#news-4" type="button" class="text-sm bg-green-200 hover:bg-green-100 mt-2 py-1 px-3 text-white">Read More</a>
-                </div>
-            </div>
-            <a href="#news" type="button" class="mt-3 ml-8 text-sm text-green-400 hover:underline hover:text-green-100">More News...</a>
-        </div>
+           
 
-        <div class="w-full md:w-1/3">
-            <!-- announcements -->
-            <div class="w-4/5 mx-auto py-8 lg:py-0" id="announcements">
-                <h3 class="text-orange text-center md:text-left text-xl font-serif font-bold">Announcements</h3>
-                <div class="w-full">
-                    <ul class="lg:ml-2 py-1">
-                        <li class="py-2 lg:py-1 border-b border-green-100 border-dotted"><a href="#announcements" class="lg:text-sm xl:text-base text-green-100 hover:underline">UC Advisory</a></li>
-                        <li class="py-2 lg:py-1 border-b border-green-100 border-dotted"><a href="#announcements" class="lg:text-sm xl:text-base text-green-100 hover:underline">Suspension of Online Classes and Activities</a></li>
-                        <li class="py-2 lg:py-1 border-b border-green-100 border-dotted"><a href="#announcements" class="lg:text-sm xl:text-base text-green-100 hover:underline">Suspension of Classes</a></li>
-                        <li class="py-2 lg:py-1 border-b border-green-100 border-dotted"><a href="#announcements" class="lg:text-sm xl:text-base text-green-100 hover:underline">UC Health Advisory</a></li>
-                        <li class="py-2 lg:py-1 border-b border-green-100 border-dotted"><a href="#announcements" class="lg:text-sm xl:text-base text-green-100 hover:underline">Enrollment Schedule and Encoding Areas : 2nd Trimester SY 2019-2020</a></li>
-                        <li class="py-2 lg:py-1 border-b border-green-100 border-dotted"><a href="#announcements" class="lg:text-sm xl:text-base text-green-100 hover:underline">The Global Undergraduate Exchange Program (Global UGRAD)</a></li>
-                        <li class="py-2 lg:py-1 border-b border-green-100 border-dotted"><a href="#announcements" class="lg:text-sm xl:text-base text-green-100 hover:underline">Reservation for Incoming Grade 11 and College Freshmen for SY 2020-2021</a></li>
-                        <li class="py-2 lg:py-1 border-b border-green-100 border-dotted"><a href="#announcements" class="lg:text-sm xl:text-base text-green-100 hover:underline">An Invitation for the Cordillera Human Rights Summit</a></li>
-                        <li class="py-2 lg:py-1 border-b border-green-100 border-dotted"><a href="#announcements" class="lg:text-sm xl:text-base text-green-100 hover:underline">Enrollment Schedule and Encoding Areas : 1st Trimester SY 2019-2020</a></li>
-                        <li class="py-2 lg:py-1 border-b border-green-100 border-dotted"><a href="#announcements" class="lg:text-sm xl:text-base text-green-100 hover:underline">73rd Commencement Exercises Primer for Graduates and Parents</a></li>
-                    </ul>
-                </div>
-                <a href="#announcements" type="button" class="mt-3 ml-8 text-sm text-green-400 hover:underline hover:text-green-100">More Announcements</a>
-            </div>
-        </div>
-    </div>
 
-    <hr class="border-b border-green-200 mt-8 mb-4 w-11/12 mx-auto">
 
-    <div class="py-3" id="gallery">
-        <h3 class="text-orange text-center text-2xl font-serif font-bold">Gallery</h3>
-        <div class="pt-4 text-center">
-            <div class="gallery flex flex-wrap flex-row items-center justify-center w-5/6 mx-auto">
-                <a href="./images/gallery/1.jpg" class="w-1/2 md:w-1/3 lg:w-1/4 h-32 sm:h-40 lg:h-48 relative">
-                    <img src="./images/gallery/1.jpg" alt="" class="absolute w-full h-full object-cover">
-                </a>
-                <a href="./images/gallery/2.jpg" class="w-1/2 md:w-1/3 lg:w-1/4 h-32 sm:h-40 lg:h-48 relative">
-                    <img src="./images/gallery/2.jpg" alt="" class="absolute w-full h-full object-cover">
-                </a>
-                <a href="./images/gallery/3.jpg" class="w-1/2 md:w-1/3 lg:w-1/4 h-32 sm:h-40 lg:h-48 relative">
-                    <img src="./images/gallery/3.jpg" alt="" class="absolute w-full h-full object-cover">
-                </a>
-                <a href="./images/gallery/4.jpg" class="w-1/2 md:w-1/3 lg:w-1/4 h-32 sm:h-40 lg:h-48 relative">
-                    <img src="./images/gallery/4.jpg" alt="" class="absolute w-full h-full object-cover">
-                </a>
-                <a href="./images/gallery/5.jpg" class="w-1/2 md:w-1/3 lg:w-1/4 h-32 sm:h-40 lg:h-48 relative">
-                    <img src="./images/gallery/5.jpg" alt="" class="absolute w-full h-full object-cover">
-                </a>
-                <a href="./images/gallery/6.jpg" class="w-1/2 md:w-1/3 lg:w-1/4 h-32 sm:h-40 lg:h-48 relative">
-                    <img src="./images/gallery/6.jpg" alt="" class="absolute w-full h-full object-cover">
-                </a>
-                <a href="./images/gallery/7.jpg" class="w-1/2 md:w-1/3 lg:w-1/4 h-32 sm:h-40 lg:h-48 relative">
-                    <img src="./images/gallery/7.jpg" alt="" class="absolute w-full h-full object-cover">
-                </a>
-                <a href="./images/gallery/8.jpg" class="w-1/2 md:w-1/3 lg:w-1/4 h-32 sm:h-40 lg:h-48 relative">
-                    <img src="./images/gallery/8.jpg" alt="" class="absolute w-full h-full object-cover">
-                </a>
-                <a href="./images/gallery/9.jpg" class="w-1/2 md:w-1/3 lg:w-1/4 h-32 sm:h-40 lg:h-48 relative">
-                    <img src="./images/gallery/9.jpg" alt="" class="absolute w-full h-full object-cover">
-                </a>
-                <a href="./images/gallery/10.jpg" class="w-1/2 md:w-1/3 lg:w-1/4 h-32 sm:h-40 lg:h-48 relative">
-                    <img src="./images/gallery/10.jpg" alt="" class="absolute w-full h-full object-cover">
-                </a>
-            </div>
-            <a href="#gallery" type="button" class="bg-green-200 my-3 px-6 py-3 text-sm text-white hover:bg-green-100"><i class="fas fa-images mr-2"></i> View More Photos</a>
-        </div>
-    </div>
-
-    <hr class="border-b border-green-200 mt-8 mb-4 w-11/12 mx-auto">
-
-    <div class="text-center py-3">
-        <h4 class="text-xl font-bold font-serif text-orange">UC Social</h4>
-        <p class="text-lg py-3 px-8">Follow our social media accounts for easier news and updates</p>
-        <ul class="flex justify-center items-center my-3">
-            <li class="mx-2" id="social-fb"><a href="#social-fb" class="hover:text-green-100"><i class="text-5xl fab fa-facebook"></i></a></li>
-            <li class="mx-2" id="social-twitter"><a href="#social-twitter" class="hover:text-green-100"><i class="text-5xl fab fa-twitter"></i></a></li>
-            <li class="mx-2" id="social-gplus"><a href="#social-gplus" class="hover:text-green-100"><i class="text-5xl fab fa-google-plus"></i></a></li>
-            <li class="mx-2" id="social-yt"><a href="#social-yt" class="hover:text-green-100"><i class="text-5xl fab fa-youtube"></i></a></li>
+            
+          <li class="dropdown"><a href="#"><span>Student Services</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="Career-Center.html">Career Center</a></li>
+              <li><a href="https://uc-bcf.edu.ph/center-for-creative-productions">Center for Creative Productions</a></li>
+              <li><a href="https://uc-bcf.edu.ph/sports-development-office">Sports Development Office</a></li>
+              <li><a href="https://uc-bcf.edu.ph/legal-aid-clinic">Legal Aid Clinic</a></li>
+              <li><a href="https://uc-bcf.edu.ph/guidance-and-counseling">Guidance and Counseling</a></li>
+              <li><a href="https://uc-bcf.edu.ph/libraries">Libraries</a></li>
+              <li><a href="https://uc-bcf.edu.ph/registrar">Registrar</a></li>
+              <li><a href="https://uc-bcf.edu.ph/student-welfare-and-development">Student Welfare and Development</a></li>
+              <li><a href="https://uc-bcf.edu.ph/student-welfare-services">Student Welfare Services</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="https://uc-bcf.edu.ph/celebrating-75-years-excellence">UC Calendar</a></li>
         </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+     
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+    <div>
+                 <div class="container" >
+
+                   <p style="font-size: 40px; color: #014715;"><img src="assets/img/logo2.png" alt="" class="img-fluid"  width="200" 
+                 height="300" style="float: left"><b>Celebrating Excellence</b> <br></p>
+                 
+                 <p><a href="https://uc-bcf.edu.ph/admission-enrollment/ugp" class="btn-get-started">Enroll Now!</a></p>
+                </div>
+                
+  </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="content">
+              <h3>Vision / Mission</h3>
+              <p>
+              <b>Vision</b></p>
+              <p>
+                  The University of the Cordilleras Libraries envisions itself as an innovative information resource center committed in sustaining knowledge and lifelong learning in the community.
+                  </p>
+                  <p>
+                  <b>Mission</b></p>
+                  <p>
+                  The UC Libraries mission is to support the teaching, learning, research, and community extension programs of the University through provision of comprehensive information resources and                  customer-focused services.
+                  
+              </p>
+            
+            </div>
+          </div>
+          <div class="col-lg-8 d-flex align-items-stretch">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-receipt"></i>
+                    <h4>Center for Social Responsibility</h4>
+                    <p>To leave a sustainable program in the community by training leaders continually.</p>
+                    <a href="https://uc-bcf.edu.ph/community-engagement" >Learn More</a>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-cube-alt"></i>
+                    <h4>Project Helen</h4>
+                    <p>Health, Education, Livelihood
+,Environment, and Nurturance</p>
+                    <a href="https://uc-bcf.edu.ph/project-helen" >Learn More</a>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-gift"></i>
+                    <h4>Outreach Programs</h4>
+                     <p>Through community service, outreach, and service-learning, UC’s community engagement upholds a campus culture towards high-impacting, mutually beneficial, innovative, and collaborative community partnerships.</p>
+                     <a href="https://uc-bcf.edu.ph/outreach-programs" >Learn More</a>
+                   
+                  </div>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container-fluid">
+
+        <div class="row">
+          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative">
+            <a href="https://www.youtube.com/watch?v=h9NQUqipr-s" class="glightbox play-btn mb-4"></a>
+          </div>
+
+          <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
+            <h2><b>The History of the University of the Cordilleras</b></h2>
+            <p>Baguio Colleges, as the University of the Cordilleras was earlier known, pioneered in tertiary education in the mountain highlands of the Cordillera region amidst devastation in and around Baguio City after the Second World War.</p> Despite a pessimistic outlook and the bleak prospects pervading the climate of any undertaking at that time, Atty. Benjamin R. Salvosa envisioned Baguio City as a university town. With such vision, he undauntedly pursued a noble mission by founding a college.</p>
+              </p><p>
+            It was on June 19, 1946, coinciding with the birth anniversary of Dr. Jose P. Rizal, that a historic event unfolded. Baguio Colleges was established initially offering courses in teacher training and liberal arts, with the first batch of enrollees consisting of 156 students. Classes were first held in rented spaces at the Antipolo building, and later, at the Lopez and Lamping buildings along Session Road, the city's main thoroughfare.</p>
+        
+            <a href="https://uc-bcf.edu.ph/history" >Learn More</a>
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    
+
+ 
+
+    <!-- ======= Appointment Section ======= -->
+    <section id="appointment" class="appointment section-bg">
+      <div class="container">
+
+
+   
+
+   
+
+    <!-- ======= Gallery Section ======= -->
+    <section id="gallery" class="gallery">
+      <div class="container">
+
+        <div class="section-title">
+          <h2 style="color: #ffffff;">Life@UC</h2>
+          <p style="color: #ffffff">"Achieving Excellence Together"</p>
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row g-0">
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-1.jpg" class="galelry-lightbox">
+                <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-2.jpg" class="galelry-lightbox">
+                <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-3.jpg" class="galelry-lightbox">
+                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-4.jpg" class="galelry-lightbox">
+                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-5.jpg" class="galelry-lightbox">
+                <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-6.jpg" class="galelry-lightbox">
+                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-7.jpg" class="galelry-lightbox">
+                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-4">
+            <div class="gallery-item">
+              <a href="assets/img/gallery/gallery-8.jpg" class="galelry-lightbox">
+                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Gallery Section -->
+
+ 
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"  width="155" 
+     height="300"></a>
+            <p>
+              Governor Pack Road, Baguio City 2600, PH <br>
+              <strong>Phone:</strong>  +63 74 442 3316<br>
+              <strong>Fax:</strong>   +63 74 442 6268<br>
+              <strong>Email:</strong>  email@uc-bcf.edu.ph<br>
+            </p>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <ul>
+              <li><i class="bx "></i> <a href="#">GRADUATE PROGRAMS</a></li>
+              <li><i class="bx "></i> <a href="#">ACADEMIC COLLEGES</a></li>
+              <li><i class="bx "></i> <a href="#">INTERNATIONAL</a></li>
+              <li><i class="bx "></i> <a href="#">ETEEAP</a></li>
+              <li><i class="bx "></i> <a href="#">SENIOR HIGH SCHOOL</a></li>
+               <li><i class="bx"></i> <a href="#">GRADE SCHOOL
+& JUNIOR HIGH SCHOOL</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <ul>
+              <li><i class="bx "></i> <a href="#">SCHOLARSHIP</a></li>
+              <li><i class="bx "></i> <a href="#">RESEARCH</a></li>
+              <li><i class="bx "></i> <a href="#">COMMUNITY</a></li>
+              <li><i class="bx "></i> <a href="#">ALUMNI</a></li>
+              <li><i class="bx "></i> <a href="#">CAREER</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-2 col-md-6 footer-links">
+            <ul>
+              <li><i class="bx "></i> <a href="#">JOIN US</a></li>
+              <li><i class="bx "></i> <a href="#">CONTACT US</a></li>
+              <li><i class="bx "></i> <a href="#">LEGACY WEBSITE</a></li>
+            </ul>
+          </div>
+
+          
+
+        </div>
+      </div>
     </div>
 
-    <hr class="border-b border-green-200 mt-8 w-full">
+    <div class="container d-md-flex py-4">
 
-    <footer class="bg-green-300 p-8">
-        <!-- main footer -->
-        <div class="text-center text-white">
-            <p class="lg:text-lg py-2">Copyright © 2020. University of the Cordilleras. <br class="block sm:hidden" />All rights reserved.</p>
-            <p class="italic tracking-wide">Governor Pack Road, Baguio City, Philippines 2600</p>
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright" style="color: #ffffff">
+          &copy; Copyright <strong><span> University of the Cordilleras</span></strong>. All Rights Reserved
         </div>
-    </footer>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/medilab-free-medical-bootstrap-theme/ -->
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="https://twitter.com/UCJaguars" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://www.facebook.com/UCjaguars" class="facebook"><i class="bx bxl-facebook"></i></a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-    <!-- simplelightbox -->
-    <script type="text/javascript">
-        var lightbox = new SimpleLightbox('.gallery a', { /* options */ });
-    </script>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
-Loading complete
